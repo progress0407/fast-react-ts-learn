@@ -12,7 +12,6 @@ function Article(props) {
 function Header(props) {
   return <header>
   <h1><a href="/" onClick={(event)=>{
-    console.log(event);
     event.preventDefault(); // // a태그의 이벤트(href)를 막는다
     props.onChangeMode();
   }}>{props.title}</a></h1>
@@ -62,8 +61,6 @@ function Update(props) {
 
   const [title, setTitle] = useState(props.title);
   const [body, setBody] = useState(props.body);
-  console.log('업데이트 이벤트 발생')
-  props.title = 'some-value'
 
   return <article>
     <h2>Update</h2>
@@ -74,7 +71,6 @@ function Update(props) {
       props.onUpdate(title, body);
     }}>
       <p><input type="text" name="title" value={title} onChange={(event)=>{
-        console.log(event.target.value)
         setTitle(event.target.value)
       }}/></p>
       <p><textarea name="body" value={body} onChange={(event)=>{
@@ -86,7 +82,6 @@ function Update(props) {
 }
 
 function App() {
-  console.log('App 렌더링')
   // const _mode = useState('WELCOME');
   // const mode = _mode[0];
   // const setMode = _mode[0];
