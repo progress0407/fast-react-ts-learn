@@ -16,4 +16,4 @@ function addNumber (a:number, b:number):number {
 console.log(a);
 console.log(c);
 
-console.log(addNumber(12, 15));
+console.log(addNumber(15, 15));
