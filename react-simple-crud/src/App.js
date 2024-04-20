@@ -142,12 +142,16 @@ function App() {
   } 
   else if(mode  === 'UPDATE') {
     let foundTopic = topics.find(item => item.id === id)
-    content = <Update title={foundTopic.title} body={foundTopic.body} onUpdate={(_title, _body)=>{
-      foundTopic.title = _title
-      foundTopic.body = _body
-      const newTopics = [...topics];
-      setTopics(newTopics)
-      setMode('READ')
+    content = 
+    <Update 
+      title={foundTopic.title} 
+      body={foundTopic.body} 
+      onUpdate={(_title, _body) => {
+        foundTopic.title = _title
+        foundTopic.body = _body
+        const newTopics = [...topics];
+        setTopics(newTopics)
+        setMode('READ')
     }}></Update>
   }
   else if(mode  === 'DELETE') {

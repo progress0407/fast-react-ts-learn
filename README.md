@@ -30,11 +30,24 @@ Java로 생각해보면 동등성이 아닌 동일성 비교를 기준으로 상
 ### npx 명령어 실행시 오류
 `npx create-react-app . `를 실행해서 npm 관련 오류가 날 경우, %AppData%에 npm 디렉터리를 만들어서 해결
 
+## 참고
+
+- https://create-react-app.dev/docs/getting-started
+
 # 타입스크립트
 
 ## 타입스크립트 메모
+
+- `npx create-react-app my-app --template typescript`
+  - 초기 프로젝트 생성
 
 - `tsc {파일명}.ts`: 특정 ts 파일 실행 (윈도에서는 오류 발생)
   - 이 명령어로 대체 `tsc -p {파일명}.ts`
   - `-w`를 하면 실시간으로 js 파일로 컴파일
 - `node {파일명}.js`: 특정 js파일 실행 
+
+- `rafce`: 플러그인의 기능으로 컴포넌트 템플릿 코드 생성
+
+## 참고
+
+- https://create-react-app.dev/docs/adding-typescript/
